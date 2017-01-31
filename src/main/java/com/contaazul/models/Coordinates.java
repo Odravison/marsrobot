@@ -15,6 +15,9 @@ public class Coordinates {
 
 	/**
 	* Default Coordinates constructor
+        * @param x
+        * @param y
+        * @param orientation
 	*/
 	public Coordinates(Integer x, Integer y, String orientation) {
 		this.x = x;
@@ -32,7 +35,7 @@ public class Coordinates {
 
 	/**
 	* Sets new value of x
-	* @param
+	* @param x
 	*/
 	public void setX(Integer x) {
 		this.x = x;
@@ -48,7 +51,7 @@ public class Coordinates {
 
 	/**
 	* Sets new value of y
-	* @param
+	* @param y
 	*/
 	public void setY(Integer y) {
 		this.y = y;
@@ -64,41 +67,9 @@ public class Coordinates {
 
 	/**
 	* Sets new value of orientation
-	* @param
+	* @param orientation
 	*/
 	public void setOrientation(String orientation) {
 		this.orientation = orientation;
-	}
-
-	/**
-	* Returns value of s
-	* @return
-	*/
-	public Coordinate getS() {
-		return s;
-	}
-
-	/**
-	* Sets new value of s
-	* @param
-	*/
-	public void setS(Coordinate s) {
-		this.s = s;
-	}
-
-	/**
-	* Returns value of s
-	* @return
-	*/
-	public Coordinate getS() {
-		return s;
-	}
-
-	/**
-	* Sets new value of s
-	* @param
-	*/
-	public void setS(Coordinate s) {
-		this.s = s;
 	}
 }
