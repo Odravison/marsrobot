@@ -58,12 +58,6 @@ public class RobotController {
     @RequestMapping(method = RequestMethod.POST,
                     value = "/rest/mars/{command}")
     public ResponseEntity<Orientation> move (@PathVariable("command") String command){
-        Tuple<Integer, Integer> tupleS = new Tuple<>(0,0);
-        Orientation orientationS = new Orientation(tupleS, "N");
-        Robot robotS = new Robot(orientationS);
-
-        robotRepository.save(robotS);
-
 
         Robot robot = getOneRobot();
         Orientation orientation = null;
