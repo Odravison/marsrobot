@@ -6,11 +6,12 @@ This is a little api simulator of a robot living Mars.
 This robot has only 5x5 area to walk by commands sent by "NASA" via API/REST.
 ###### Configuration tools
 This project use:
-- Spring Framework (Spring-boot) 1.5.1;
-- Maven 3.1;
-- Maven Wrapper 0.1.5;
-- Java SDK 1.8;
-- JRE 8;
+- Spring Framework (Spring-boot) 1.5.1
+- Maven 3.1
+- Maven Wrapper 0.1.5
+- Java SDK 1.8
+- JRE 8
+- HSQLDB (Embeed) 2.3.1
 
 ____
 
@@ -68,6 +69,12 @@ ____
 
 #### __Tests__
 The test run always after build and run server, which is respectively, running the commands `./mvnw clean package` , `./mvnw spring-boot:run`
+
+____
+#### __Database__
+The project uses [HSQLDB](http://hsqldb.org/) as database, embeed only. Which means that the data will still persisted only in runtime.
+
+____
 
 #### __The goal__
 
